@@ -6,18 +6,22 @@ import java.util.Scanner;
 public class GameConsole {
 
 	/** play the game. */
-	public int play(NumberGame game) {
-		Scanner console = new Scanner(System.in);
+	public int play(MastGame game) {
+		Scanner input = new Scanner(System.in);
 		
-		// describe the game
-		System.out.println( game.toString() );
+		System.out.println( "WELCOME TO MASTGAME\n" );
+		System.out.println(game.toString());
+		int guess = 0 ;
+		boolean correct = false;
+		do{
+			System.out.print("Your answer? ");
+			guess = input.nextInt();
+			
+			correct = game.guess(guess);
+			System.out.println( game.getMessage() );
+
+		}while(correct != true);
 		
-		// This is just an example.
-		System.out.println( game.getMessage() );
-		System.out.print("Your answer? ");
-		int guess = console.nextInt();
-		boolean correct = game.guess(guess);
-		System.out.println( game.getMessage() );
 		return guess;
 	}
 	

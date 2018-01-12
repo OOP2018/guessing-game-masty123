@@ -9,6 +9,8 @@
 public class NumberGame {
 	/** A helpful message for user. */
 	private String message;
+	
+	private int counter;
 
     /** Initialize a new default game. */
     public NumberGame() {
@@ -36,6 +38,11 @@ public class NumberGame {
      */
 	public String getMessage() {
 		return message;
+	}
+	
+	
+	public int getCounter(){
+		return counter ;
 	}
 	
 	/**
