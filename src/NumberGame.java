@@ -42,11 +42,17 @@ public class NumberGame {
 		return message;
 	}
 	
-	
+	/**
+	 * get the number of time that you have tried to guess.
+	 * @return times that you have tried.
+	 */
 	public int getCounter(){
 		return counter ;
 	}
-	
+	/**
+	 * get the secret number.
+	 * @return the answer
+	 */
 	public int getSecret(){
 		return secret ;
 	}
