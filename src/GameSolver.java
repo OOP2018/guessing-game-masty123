@@ -7,8 +7,9 @@ public class GameSolver extends NumberGame {
 		int min = 1;
 		int range = (max - min) + 1;
 		int guess = 0 ;
-		while (guess != gm.secret){
-			
+		boolean running = true ;
+		while (running){
+			guess = (int) ((Math.random() * range) + min);
 		}
 		return guess;
 		

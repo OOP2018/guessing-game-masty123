@@ -4,7 +4,7 @@ public class MastGame extends NumberGame {
 	//variables 'n' stuff
 	private int upperBound;
 	private String hint= "";
-	private int counter = 1 ;
+	private int counter = 0 ;
 	
 	public int secret ;
 	
@@ -18,14 +18,6 @@ public class MastGame extends NumberGame {
 		secret = getRandomNumber(this.upperBound);
 	}
 	
-	public void setMessage(int number){
-		if(secret > number){
-			hint = "Sorry, your guess is too small.\n";
-		}
-		else{
-			hint = "Sorry, you're guess is too large.\n";
-		}
-	}
 	
 	public int getRandomNumber (int limit){
 		long seed = System.currentTimeMillis();
@@ -34,16 +26,19 @@ public class MastGame extends NumberGame {
 	}
 	
 	public boolean guess(int number){
-		
+		counter++;
 		if (number == secret){
 			hint = "Right! The secret number is "+number+" !."+" You have guessed "+counter+" times.";
 			return true;
 		}
+		
+		if(secret > number){
+			hint = "Sorry, your guess is too small.\n";
+		}
 		else{
-			counter++;
-			setMessage(number);
-			return false;	
-	  }
+			hint = "Sorry, you're guess is too large.\n";
+		}
+		return false ;
 	}
 	
 	public int getUpperBound(){
