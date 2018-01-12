@@ -11,6 +11,8 @@ public class NumberGame {
 	private String message;
 	
 	private int counter;
+	
+	private int secret;
 
     /** Initialize a new default game. */
     public NumberGame() {
@@ -43,6 +45,10 @@ public class NumberGame {
 	
 	public int getCounter(){
 		return counter ;
+	}
+	
+	public int getSecret(){
+		return secret ;
 	}
 	
 	/**

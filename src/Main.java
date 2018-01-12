@@ -10,9 +10,11 @@ public class Main {
 		// upper limit for secret number in guessing game
 		int upperBound = 100;
 		MastGame game = new MastGame(upperBound);
-		GameConsole ui = new GameConsole();
-		ui.play(game);
+//		GameConsole ui = new GameConsole();
+//		ui.play(game);
 		
 		
+		GameSolver gs = new GameSolver();
+		gs.play(game);
 	}
 }

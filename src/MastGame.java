@@ -5,8 +5,7 @@ public class MastGame extends NumberGame {
 	private int upperBound;
 	private String hint= "";
 	private int counter = 0 ;
-	
-	public int secret ;
+	private int secret ;
 	
 	public MastGame(){};
 	/**
@@ -43,6 +42,10 @@ public class MastGame extends NumberGame {
 	
 	public int getUpperBound(){
 		return upperBound;
+	}
+	
+	public int getSecret(){
+		return secret ;
 	}
 	
 	public String getMessage(){
