@@ -2,10 +2,14 @@ import java.util.Scanner;
 
 /** 
  *  Play guessing game on the console.
+ *  @auther Theeruth Borisuth
  */
 public class GameConsole {
-
-	/** play the game. */
+	/**
+	 * This method display the message in the console.
+	 * @param game
+	 * @return guess number
+	 */
 	public int play(MastGame game) {
 		Scanner input = new Scanner(System.in);
 		//greeting, friends.

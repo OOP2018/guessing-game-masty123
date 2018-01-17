@@ -1,7 +1,7 @@
 import java.util.Random;
 /**
  * A Guessing game called MastGame it will random a number from 1 to 100 and you will need to guess which number it is.
- * @author HP
+ * @author Theeruth Borisuth
  *
  */
 public class MastGame extends NumberGame {
@@ -33,6 +33,8 @@ public class MastGame extends NumberGame {
 	}
 	/**
 	 * Guess the number that we have got. If you have the same
+	 * @param number that we guess.
+	 * @return true if u guess right, false if it wrong.
 	 */
 	public boolean guess(int number){
 		counter++;
@@ -51,27 +53,34 @@ public class MastGame extends NumberGame {
 	}
 	/**
 	 *Return the max value of the number.
+	 *@return max value.
 	 */
 	public int getUpperBound(){
 		return upperBound;
 	}
 	/**
 	 * Get the secret number.
+	 * @return secret number.
 	 */
 	public int getSecret(){
 		return secret ;
 	}
 	/**
-	 * get the message to know whether we guess right or wrong.
+	 * 	get the message to know whether we guess right or wrong.
+	 * 	@return hint whether we guess right or wrong.
 	 */
 	public String getMessage(){
 		return hint;
 	}
+	public int getCount(){
+		return counter;
+	}
 	/**
-	 * return the question of the game.
+	 * return the question of the game.4
+	 * @return Question message.
 	 */
 	public String toString(){
-		return "I'm guesing the number between 1 and 100";
+		return "I'm guesing the number between 1 and " + upperBound;
 	}
 	
 }

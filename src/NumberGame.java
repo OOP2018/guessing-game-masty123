@@ -10,8 +10,6 @@ public class NumberGame {
 	/** A helpful message for user. */
 	private String message;
 	
-	private int counter;
-	
 	private int secret;
 
     /** Initialize a new default game. */
@@ -46,8 +44,8 @@ public class NumberGame {
 	 * get the number of time that you have tried to guess.
 	 * @return times that you have tried.
 	 */
-	public int getCounter(){
-		return counter ;
+	public int getCount(){
+		return 0 ;
 	}
 	/**
 	 * get the secret number.
@@ -68,9 +66,10 @@ public class NumberGame {
 	/** 
 	 * Get the largest possible value of the solution for this game. 
 	 * For a guessing game, this should be the upper bound of secret.
+	 * @return the max value 
 	 */
 	public int getUpperBound() {
-		return Integer.MAX_VALUE;  // not very helpful :-)
+		return Integer.MAX_VALUE;  
 	}
     
     /**
