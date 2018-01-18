@@ -15,6 +15,7 @@ public class GameSolver extends NumberGame {
 		int min = 1;
 		int guess = min + (max - min)/2 ; 
 		while (!game.guess(guess)){
+			//check the message from guess() method.
 			game.guess(guess);
 			//get message from the number game class.
 			String hint = game.getMessage();
