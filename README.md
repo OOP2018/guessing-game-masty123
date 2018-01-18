@@ -12,7 +12,7 @@ A class that **MastGame.java** and **GameSolver** extend from it. It provide sev
 ## Main
 This class is used for Initialize the **MastGame** and **GameSolver** class.
 ## GameSolver.java
-A program that can find the correct number from the guessing game. This class solve the game by using the Bissection Algorithm. At each step you divide the search interval in half, so that the solution is always somewhere in the search interval.
+A program that can find the correct number from the guessing game. This class solve the game by using the Bisection Algorithm. At each step you divide the search interval in half, so that the solution is always somewhere in the search interval.
     
 ## How to run
 Press Ctrl+F11  then it will run the gamesolver. You can play it yourself by doing this step in the class called **Main**.
