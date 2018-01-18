@@ -4,7 +4,7 @@
  * A main class for the GuessingGame.
  * It is responsible for creating objects, 
  * connecting objects, and running the game UI.
- * @auther Theeruth Borisuth
+ * @author Theeruth Borisuth
  */
 public class Main {
 	public static void main(String[] args) {
@@ -19,8 +19,7 @@ public class Main {
 		
 		//this is the Game solver.
 		GameSolver gs = new GameSolver();
-		System.out.println("Mission completed. The number is "+gs.play(game));
-		System.out.println("I have tried "+game.getCount()+" times.");
+		gs.play(game);
 		
 	}
 }
