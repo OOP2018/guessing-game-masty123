@@ -21,14 +21,14 @@ public class GameSolver extends NumberGame {
 	 */
 	private int solve(NumberGame game, int upperBound, int answer){
 		game.guess(answer);
-		if (game.getMessage().contains("small")){
+		if (game.getMessage().contains("too small")){
 			if ((upperBound - answer) == 1){
 				game.guess(answer + 1);
 				return answer + 1;
 			} 
 			else return solve(game, upperBound, answer + (upperBound - answer) / 2);
 			
-		} else if (game.getMessage().contains("large")) return solve(game, answer - 1 , answer/2);
+		} else if (game.getMessage().contains("too large")) return solve(game, answer - 1 , answer/2);
 		
 		System.out.println("Mission completed. The number is "+answer);
 		System.out.println("I have tried "+game.getCount()+" times.");
