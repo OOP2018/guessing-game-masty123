@@ -20,12 +20,12 @@ public class GameSolver extends NumberGame {
 			//get message from the number game class.
 			String hint = game.getMessage();
 			//If the guess number is too large it will set the max into the guess number.
-			if(hint.toLowerCase().contains("large")){
+			if(hint.toLowerCase().contains("too large")){
 				max = guess + 1; 
 				guess = min + (max - min)/2;
 			}	
 			//If the guess number is too large it will set the max into the guess number.
-			if(hint.toLowerCase().contains("small")){
+			if(hint.toLowerCase().contains("too small")){
 				min = guess - 1;
 				guess = min + (max - min)/2;
 			}
