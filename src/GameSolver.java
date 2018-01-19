@@ -19,7 +19,7 @@ public class GameSolver extends NumberGame {
 			String hint = game.getMessage();
 			//If the guess number is too large it will set the max into the guess number.
 			if(hint.toLowerCase().contains("too large")){
-				max = guess + 1; 
+				max = guess - 1; 
 				guess = min + (max - min)/2;
 			}	
 			//If the guess number is too large it will set the max into the guess number.
@@ -28,7 +28,7 @@ public class GameSolver extends NumberGame {
 				game.guess(guess+1);
 				return guess + 1  ;
 				}
-				min = guess - 1;
+				min = guess + 1;
 				guess = min + (max - min)/2;
 			}
 		 }
