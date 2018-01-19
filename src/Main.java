@@ -19,7 +19,8 @@ public class Main {
 		
 		//this is the Game solver.
 		GameSolver gs = new GameSolver();
-		gs.play(game);
+		System.out.println("Mission completed. The number is "+gs.play(game));
+		System.out.println("I have tried "+game.getCount()+" times.");
 		
 	}
 }
