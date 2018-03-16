@@ -1,3 +1,6 @@
+package gameClass;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.Random;
 /**
  * A Guessing game called MastGame it will random a number from 1 to 100 and you will need to guess which number it is.
@@ -10,6 +13,7 @@ public class MastGame extends NumberGame {
 	private String hint= "";
 	private int counter = 0 ;
 	private int secret ;
+	private int number;
 	
 
 	/**
@@ -38,6 +42,7 @@ public class MastGame extends NumberGame {
 	 */
 	public boolean guess(int number){
 		counter++;
+		this.number = number;
 		if (number == secret){
 			hint = "Right! The secret number is "+number+" !."+" You have guessed "+counter+" times.";
 			return true;
@@ -49,6 +54,8 @@ public class MastGame extends NumberGame {
 		else{
 			hint = "Sorry, you're guess is too large.\n";
 		}
+		setChanged();
+		notifyObservers();
 		return false ;
 	}
 	/**
@@ -81,6 +88,11 @@ public class MastGame extends NumberGame {
 	 */
 	public String toString(){
 		return "I'm guesing the number between 1 and " + upperBound;
+	}
+	
+	@Override
+	public int getAnswer(){
+		return number;
 	}
 	
 }
