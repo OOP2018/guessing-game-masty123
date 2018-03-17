@@ -1,5 +1,6 @@
     
 # Guessing Game (MastGame.java)
+![GUI](img/previewGuessingGame.PNG)
 A game that will random a number between 1 and 100. you will need guess which number is correct. Each time you guess it will tell you whether your guess number is too high or too low it will stop telling you until you found the correct number.
 
 
