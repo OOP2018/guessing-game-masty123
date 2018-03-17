@@ -20,7 +20,6 @@ public class Main extends Application {
 			primaryStage.setTitle("Guessing Game");
 			primaryStage.setScene(scene);
 			primaryStage.sizeToScene();
-			primaryStage.setResizable(false);
 			primaryStage.show();
 			
 		} catch(Exception e) {
