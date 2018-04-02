@@ -50,7 +50,7 @@ public class AnswerView implements Observer {
 		Scene scene = new Scene(root);
 		// show the scene on the stage
 		stage.setScene(scene);
-		stage.setTitle("Old Answer");
+		stage.setTitle("Current Answer");
 		stage.sizeToScene();
 	}
 

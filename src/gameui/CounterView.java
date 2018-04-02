@@ -50,7 +50,7 @@ public class CounterView implements Observer {
 		Scene scene = new Scene(root);
 		// show the scene on the stage
 		stage.setScene(scene);
-		stage.setTitle("counter");
+		stage.setTitle("Counter");
 		stage.sizeToScene();
 	}
 
