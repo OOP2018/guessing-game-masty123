@@ -1,4 +1,4 @@
-package gameClass;
+package gameclass;
 
 
 /**

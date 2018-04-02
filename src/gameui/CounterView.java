@@ -1,10 +1,10 @@
-package GameUI;
+package gameui;
 
 import java.util.Observable;
 import java.util.Observer;
 
-import gameClass.MastGame;
-import gameClass.NumberGame;
+import gameclass.MastGame;
+import gameclass.NumberGame;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -14,13 +14,13 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class CounterView implements Observer {
-	 private NumberGame game ;
+	 private MastGame game ;
 	 private Stage stage = new Stage();
 	 private Label label;
 	
 	
 	
-	CounterView(NumberGame game){
+	CounterView(MastGame game){
 		this.game = game ;
 		game.addObserver(this);
 		initComponent();
@@ -50,7 +50,7 @@ public class CounterView implements Observer {
 		Scene scene = new Scene(root);
 		// show the scene on the stage
 		stage.setScene(scene);
-		stage.setTitle("Old Answer");
+		stage.setTitle("counter");
 		stage.sizeToScene();
 	}
 

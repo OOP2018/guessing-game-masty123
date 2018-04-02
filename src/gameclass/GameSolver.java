@@ -1,4 +1,4 @@
-package gameClass;
+package gameclass;
 /**
  * This class will solve the MastGame by itself. . This class solve the game by using the Bisection Algorithm. 
  * At each step you divide the search interval in half, so that the solution is always somewhere in the search interval.

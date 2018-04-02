@@ -1,4 +1,4 @@
-package GameUI;
+package gameui;
 
 import javafx.application.Application;
 

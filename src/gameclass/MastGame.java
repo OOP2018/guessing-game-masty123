@@ -1,4 +1,4 @@
-package gameClass;
+package gameclass;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.Random;
@@ -45,6 +45,8 @@ public class MastGame extends NumberGame {
 		this.number = number;
 		if (number == secret){
 			hint = "Right! The secret number is "+number+" !."+" You have guessed "+counter+" times.";
+			setChanged();
+			notifyObservers();
 			return true;
 		}
 		

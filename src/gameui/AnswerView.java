@@ -1,10 +1,10 @@
-package GameUI;
+package gameui;
 
 import java.util.Observable;
 import java.util.Observer;
 
-import gameClass.MastGame;
-import gameClass.NumberGame;
+import gameclass.MastGame;
+import gameclass.NumberGame;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

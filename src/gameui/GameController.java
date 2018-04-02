@@ -1,5 +1,5 @@
-package GameUI;
-import gameClass.MastGame;
+package gameui;
+import gameclass.MastGame;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -23,7 +23,6 @@ public class GameController {
 	//initialize variable from MastGame.
 	private int upperBound = 100;
 	private MastGame game = new MastGame(upperBound);
-	private int answer = game.getSecret();
 	private AnswerView aView = new AnswerView(game);
 	private CounterView cView = new CounterView(game);
 	
